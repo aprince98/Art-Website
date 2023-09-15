@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>
+            World Art Website
+        </title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css">
+    </head>
+    <body>
+       <section class="header">
+            <nav>
+                <a href="index.html"><img src="Images/logo3.png"></a>
+                <div class="nav-links" id="navLinks">
+                    <i class="fa fa-times" onclick="hideMenu()"></i>
+                    <ul>
+                        <li><a href="">HOME</a></li>
+                        <li><a href="">ABOUT</a></li>
+                        <li><a href="">PORTFOLIO</a></li>
+                        <li><a href="">BLOG</a></li>
+                        <li><a href="">CONTACT</a></li>
+                    </ul>
+                </div>
+                <i class="fa fa-bars" onclick="showMenu()"></i>
+            </nav>
+
+            <div class="text-box">
+                <h1>World's Biggest Art Platform</h1>
+                <p>
+                    Making website is now one of the easiest thing in the world. You 
+                    just need to learn HTML, CSS,<br> Javascript and you are good to go.
+                </p>
+                <a href="" class="hero-btn">Visit Us To Know More</a>
+            </div>
+       </section> 
+
+<!------ Portfolio ------>
+<section class="portfolio">
+    <h1>Our Art Portfolio</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+    <div class="row">
+        <div class="portfolio-col">
+            <h3>Drawing</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque aliquet turpis nulla, eleifend faucibus est sollicitudin ut.
+                Maecenas ut venenatis ex, et dapibus purus Donec sit
+            </p>
+        </div>
+        <div class="portfolio-col">
+            <h3>Painting</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque aliquet turpis nulla, eleifend faucibus est sollicitudin ut.
+                Maecenas ut venenatis ex, et dapibus purus Donec sit
+            </p>
+        </div>
+        <div class="portfolio-col">
+            <h3>Scurlpture</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque aliquet turpis nulla, eleifend faucibus est sollicitudin ut.
+                Maecenas ut venenatis ex, et dapibus purus Donec sit
+            </p>
+        </div>
+    </div>
+
+</section>
+<!--------- Art Studio --------->
+<section class="studio">
+    <h1>Our Art Studio</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+
+    <div class="row">
+        <img src="Images/Art Studio 11.jpeg">
+        <div class="layer">
+            <h3>ACCRA</h3>
+        </div>
+    </div>
+    <div class="row">
+        <img src="Images/ArtStudio.jpeg">
+        <div class="layer">
+            <h3>KUMASI</h3>
+        </div>
+    </div>
+    <div class="row">
+        <img src="Images/Art.webp">
+        <div class="layer">
+            <h3>CAPE COAST</h3>
+        </div>
+    </div>
+</section>
+
+
+<!--------------Javascript for Toggle Menu----------->
+       <script>
+            var navLinks = document.getElementById("navLinks")
+            function showMenu(){
+                navLinks.style.right = "0";
+            }
+            function hideMenu(){
+                navLinks.style.right = "-200px";
+            }
+       </script>
+
+    </body>
+</html>
